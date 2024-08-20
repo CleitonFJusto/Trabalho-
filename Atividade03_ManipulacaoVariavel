@@ -1,0 +1,41 @@
+import java.text.DecimalFormat;
+
+public class Main {
+    public static void main(String[] args) {
+        // Declaração de variáveis
+        String nomeProduto = "Cadeira"; // Nome do produto
+        double precoUnitario = 150.00; // Preço unitário do produto em reais
+        int quantidadeComprada = 10; // Quantidade de produtos comprados
+        double taxaImposto = 0.15; // Taxa de imposto sobre o produto (15%)
+        double margemLucro = 0.20; // Margem de lucro desejada (20%)
+
+        // Operações Simples
+        // Calcular o valor total sem impostos
+        double valorTotalSemImpostos = precoUnitario * quantidadeComprada;
+
+        // Calcular o valor do imposto
+        double valorImposto = valorTotalSemImpostos * taxaImposto;
+
+        // Calcular o valor total com impostos
+        double valorTotalComImpostos = valorTotalSemImpostos + valorImposto;
+
+        // Calcular o preço de venda necessário para alcançar a margem de lucro desejada
+        double precoVenda = valorTotalComImpostos / (1 - margemLucro);
+
+        // Desafio Extra
+        // Arredondar o preço de venda para duas casas decimais
+        precoVenda = Math.round(precoVenda * 100.0) / 100.0;
+
+        // Formatadores de moeda
+        DecimalFormat formatoMoeda = new DecimalFormat("R$ #,##0.00");
+
+        // Exibição de resultados
+        System.out.println("Nome do Produto: " + nomeProduto);
+        System.out.println("Preço Unitário: " + formatoMoeda.format(precoUnitario));
+        System.out.println("Quantidade Comprada: " + quantidadeComprada);
+        System.out.println("Valor Total sem Impostos: " + formatoMoeda.format(valorTotalSemImpostos));
+        System.out.println("Valor do Imposto: " + formatoMoeda.format(valorImposto));
+        System.out.println("Valor Total com Impostos: " + formatoMoeda.format(valorTotalComImpostos));
+        System.out.println("Preço de Venda Sugerido: " + formatoMoeda.format(precoVenda));
+    }
+}
