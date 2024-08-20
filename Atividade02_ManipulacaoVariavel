@@ -1,0 +1,37 @@
+public class Main {
+    public static void main(String[] args) {
+        // Declaração de variáveis
+        String nome = "Carlos"; // Nome da pessoa
+        int idade = 30; // Idade da pessoa
+        double salarioMensal = 3000.00; // Salário bruto mensal em reais
+        int mesesTrabalhados = 12; // Quantidade de meses trabalhados em um ano
+        int quantidadeProdutos = 10; // Quantidade de produtos comprados
+        double valorTotalCompras = 1500.00; // Valor total gasto com produtos em reais
+
+        // Operações Simples
+        // Calcular o salário anual bruto
+        double salarioAnualBruto = salarioMensal * mesesTrabalhados;
+
+        // Subtrair o valor de desconto do salário anual bruto para obter o salário anual líquido
+        double desconto = 2000.00; // Valor fixo de desconto em reais
+        double salarioAnualLiquido = salarioAnualBruto - desconto;
+
+        // Calcular a média do valor gasto por produto
+        double mediaValorPorProduto = valorTotalCompras / quantidadeProdutos;
+
+        // Concatenar o nome da pessoa e o salário anual líquido com uma mensagem personalizada
+        String mensagem = "Olá, " + nome + "! Seu salário anual líquido é R$ " + salarioAnualLiquido + ".";
+
+        // Exibição de resultados
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade + " anos");
+        System.out.println("Salário Mensal: R$ " + salarioMensal);
+        System.out.println("Meses Trabalhados: " + mesesTrabalhados);
+        System.out.println("Quantidade de Produtos Comprados: " + quantidadeProdutos);
+        System.out.println("Valor Total das Compras: R$ " + valorTotalCompras);
+        System.out.println("Salário Anual Bruto: R$ " + salarioAnualBruto);
+        System.out.println("Salário Anual Líquido: R$ " + salarioAnualLiquido);
+        System.out.println("Média do Valor Gasto por Produto: R$ " + mediaValorPorProduto);
+        System.out.println(mensagem);
+    }
+}
