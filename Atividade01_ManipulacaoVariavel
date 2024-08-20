@@ -1,0 +1,31 @@
+public class Main {
+    public static void main(String[] args) {
+        // Declaração de variáveis
+        int idade = 18; // Exemplo de idade
+        double altura = 1.72; // Exemplo de altura em metros
+        String nome = "Cleiton"; // Exemplo de nome
+        boolean eEstudante = true; // Exemplo: a pessoa é estudante
+
+        // Atribuição de valores às variáveis
+
+        // Calcular a soma de duas idades
+        int idade2 = 35; // Exemplo de segunda idade
+        int somaIdades = idade + idade2;
+
+        // Multiplicar a altura por um fator de 2
+        double alturaMultiplicada = altura * 2;
+
+        // Concatene o nome da pessoa com uma saudação
+        String saudacao = "Olá, " + nome + "!";
+
+        // Exibição de resultados
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade + " anos");
+        System.out.println("Segunda Idade: " + idade2 + " anos");
+        System.out.println("Soma das Idades: " + somaIdades + " anos");
+        System.out.println("Altura: " + altura + " metros");
+        System.out.println("Altura multiplicada por 2: " + alturaMultiplicada + " metros");
+        System.out.println("Saudação: " + saudacao);
+        System.out.println("É estudante? " + (eEstudante ? "Sim" : "Não"));
+    }
+}
